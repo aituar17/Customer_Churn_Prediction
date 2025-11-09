@@ -79,5 +79,15 @@ Explained how the model makes predictions using **SHAP** and **Permutation Impor
 ### Model Evaluation
 | **Metric** | **Plot**|
 | ------------- | ------------- | 
-| **Confusion Matrix**| ![confusion_matrix](images/confusion_matrix.png) |
-| **Permutation Importance** | ![perm_importance](images/perm_importance.png) |
+| Confusion Matrix | ![confusion_matrix](images/confusion_matrix.png) |
+| Permutation Importance | ![perm_importance](images/perm_importance.png) |
+
+### SHAP Explainability
+| **Type** | **Plot**|
+| ------------- | ------------- | 
+| Global — Feature Importance | ![shap_summary_bar](images/shap_summary_bar.png) |
+| Global — Beeswarm Plot | ![shap_summary_beeswarm](images/shap_summary_beeswarm.png) |
+| PDP (Partial Dependence) | ![pdp_numeric](images/pdp_numeric.png) |
+| Local — Example 184 | ![shap_local_184](images/shap_local_184.png) |
+| Local — Example 855 | ![shap_local_855](images/shap_local_855.png) |
+| Local — Example 1090 | ![shap_local_1090](images/shap_local_1090.png) |
