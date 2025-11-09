@@ -23,3 +23,6 @@ The focus is on **balancing accuracy with interpretability**, a key aspect in re
 | ------------- | ------------- | 
 | **Numerical**| `tenure`, `MonthlyCharges`, `TotalCharges` |
 | **Categorical** | `Contract`, `PaymentMethod`, `InternetService`, `Partner`, `Dependents` |
+
+## 🧠 Project Workflow
+### 1️⃣ Exploratory Data Analysis & Preprocessing (`notebooks/01_eda_preprocessing.ipynb`)
