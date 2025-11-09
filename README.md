@@ -34,6 +34,34 @@ The focus is on **balancing accuracy with interpretability**, a key aspect in re
 
 ### 2️⃣ Modeling (`notebooks/02_modeling.ipynb`)
 - Split data: 80% train / 20% test (stratified).
-  - gg
 - Built preprocessing pipeline:
+  - Standard scaling for numeric features
+  - One-Hot Encoding for categoricals
 - Models compared:
+  - **Logistic Regression (baseline, interpretable)**
+  - **Random Forest (non-linear baseline)**
+
+#### 🔍 Results Summary
+| **Model** | **ROC-AUC**| **PR-AUC** | **F1-score** | **Notes** |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Logistic Regression | **0.842**| 0.632 | 0.614 | Balanced class weight |
+| Random Forest | **0.835**| 0.639 | 0.607 | Slightly higher PR-AUC |
+
+✅ **Best model:** Random Forest
+📦 Saved artifacts:
+- `models/artifacts/churn_model.joblib`
+- `models/artifacts/metadata.json`
+
+### 3️⃣ Model Explainability (`notebooks/03_model_explainability.ipynb`)
+Explained how the model makes predictions using **SHAP** and **Permutation Importance**.
+📈 **Performance at threshold = 0.50**
+- **Precision:** 0.504
+- **Recall:** 0.783
+- **F1:** 0.614
+- **Confusion matrix:**
+  ```lua
+  [[747, 288],
+  [ 81, 293]]
+  ```
+- **Test ROC-AUC:** 0.842
+- **Test PR-AUC:** 0.633
