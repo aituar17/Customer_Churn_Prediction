@@ -1,0 +1,1 @@
+{"num_cols":["tenure","MonthlyCharges","TotalCharges"],"cat_cols":["gender","SeniorCitizen","Partner","Dependents","PhoneService","MultipleLines","InternetService","OnlineSecurity","OnlineBackup","DeviceProtection","TechSupport","StreamingTV","StreamingMovies","Contract","PaperlessBilling","PaymentMethod"],"model":"LogisticRegression"}
