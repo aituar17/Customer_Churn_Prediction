@@ -20,5 +20,6 @@ The focus is on **balancing accuracy with interpretability**, a key aspect in re
 
 ### Key Variables
 | **Type** | **Example Features**|
+| ------------- | ------------- | 
 | **Numerical**| `tenure`, `MonthlyCharges`, `TotalCharges` |
 | **Categorical** | `Contract`, `PaymentMethod`, `InternetService`, `Partner`, `Dependents` |
