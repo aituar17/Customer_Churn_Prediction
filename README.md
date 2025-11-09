@@ -91,3 +91,61 @@ Explained how the model makes predictions using **SHAP** and **Permutation Impor
 | Local — Example 184 | ![shap_local_184](images/shap_local_184.png) |
 | Local — Example 855 | ![shap_local_855](images/shap_local_855.png) |
 | Local — Example 1090 | ![shap_local_1090](images/shap_local_1090.png) |
+
+## 🧮 Repository Structure
+```plaintext
+Customer_Churn_Prediction/
+├── data/
+│   ├── Telco-Customer-Churn.csv
+│   └── df_preprocessed.csv
+├── images/
+│   ├── confusion_matrix.png
+│   ├── perm_importance.png
+│   ├── shap_summary_bar.png
+│   ├── shap_summary_beeswarm.png
+│   ├── pdp_numeric.png
+│   ├── shap_dependence_*.png
+│   └── shap_local_*.png
+├── models/
+│   └── artifacts/
+│       ├── churn_model.joblib
+│       └── metadata.json
+├── notebooks/
+│   ├── 01_eda_preprocessing.ipynb
+│   ├── 02_modeling.ipynb
+│   └── 03_model_explainability.ipynb
+├── requirements.txt
+└── README.md
+```
+
+## ⚙️ Setup & Reproducibility
+### 1️⃣ Clone repository
+```bash
+git clone https://github.com/aituar17/customer-churn.git
+cd customer-churn
+```
+### 2️⃣ Create environment
+```bash
+python -m venv .venv
+source .venv/bin/activate  #or .venv\Scripts\activate on Windows
+pip install -r requirements.txt
+```
+### 3️⃣ Run notebooks
+Execute sequentially in Jupyter or VS Code:
+```bash
+notebooks/01_eda_preprocessing.ipynb
+notebooks/02_modeling.ipynb
+notebooks/03_model_explainability.ipynb
+```
+
+## 💬 Insights & Business Impact
+- Customers on **month-to-month contracts** are at the highest churn risk.
+- **Retention strategies** should focus on encouraging long-term contracts and loyalty programs.
+- **Price sensitivity** is evident — reducing sudden charge increases can improve retention.
+- Explainability (SHAP) helps justify model predictions to non-technical stakeholders.
+
+## 📈 Next Steps
+- Implement **calibration** for better probability estimation.
+- Deploy model as an **API (FastAPI or Flask)** for real-time scoring.
+- Monitor model drift and performance quarterly.
+- Extend analysis to other industries (e.g., **banking churn** or **credit delinquency**).
