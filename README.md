@@ -26,3 +26,14 @@ The focus is on **balancing accuracy with interpretability**, a key aspect in re
 
 ## 🧠 Project Workflow
 ### 1️⃣ Exploratory Data Analysis & Preprocessing (`notebooks/01_eda_preprocessing.ipynb`)
+- Loaded and explored raw data (`Telco-Customer-Churn.csv`).
+- Handled missing or inconsistent values (`TotalCharges`).
+- Converted categorical variables to consistent types.
+- Encoded target variable: `Churn → 0/1`.
+- Saved cleaned dataset → `data/df_preprocessed.csv`.
+
+### 2️⃣ Modeling (`notebooks/02_modeling.ipynb`)
+- Split data: 80% train / 20% test (stratified).
+      - gg
+- Built preprocessing pipeline:
+- Models compared:
