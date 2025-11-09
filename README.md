@@ -1,4 +1,4 @@
-# 💡 Customer_Churn_Prediction
+# 💡 Customer Churn Prediction
 
 ## 📘 Overview
 This project builds a **customer churn prediction model** using the Telco Customer Churn dataset.
