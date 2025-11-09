@@ -34,6 +34,6 @@ The focus is on **balancing accuracy with interpretability**, a key aspect in re
 
 ### 2️⃣ Modeling (`notebooks/02_modeling.ipynb`)
 - Split data: 80% train / 20% test (stratified).
-      - gg
+  - gg
 - Built preprocessing pipeline:
 - Models compared:
