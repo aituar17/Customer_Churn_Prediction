@@ -8,6 +8,17 @@ The focus is on **balancing accuracy with interpretability**, a key aspect in re
 
 ## 🧩 Objectives
 - Predict whether a telecom customer will churn (cancel service).
-- Handle class imbalance using `class_weight = "balanced"`.
--
--
+- Handle **class imbalance** using `class_weight = "balanced"`.
+- Compare interpretable (Logistic Regression) and non-linear (Random Forest) models.
+- Explain model behavior using **SHAP values** and **permutation importance**.
+
+## 📊 Dataset
+- **Source:** [Telco Customer Churn dataset (Kaggle)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) 
+- **File:** `data/Telco-Customer-Churn.csv`
+- **Size:** ~7,000 rows, 21 features
+- **Target:** `Churn` (binary — “Yes” or “No”)
+
+### Key Variables
+| **Type** | **Example Features**|
+| **Numerical**| `tenure`, `MonthlyCharges`, `TotalCharges` |
+| **Categorical** | `Contract`, `PaymentMethod`, `InternetService`, `Partner`, `Dependents` |
