@@ -65,3 +65,19 @@ Explained how the model makes predictions using **SHAP** and **Permutation Impor
   ```
 - **Test ROC-AUC:** 0.842
 - **Test PR-AUC:** 0.633
+
+#### 🔍 Key Drivers of Churn
+| **Rank** | **Feature**| **Effect** | 
+| ------------- | ------------- | ------------- | 
+| 1 | Contract_Month-to-month | Strong positive impact on churn | 
+| 2 | tenure | Longer tenure → lower churn | 
+| 3 | MonthlyCharges | Higher charges → higher churn | 
+| 4 | InternetService_Fiber_optic | Associated with higher churn | 
+| 5 | TotalCharges | Higher total → lower churn | 
+
+## 🧩 Visualizations
+### Model Evaluation
+| **Metric** | **Plot**|
+| ------------- | ------------- | 
+| **Confusion Matrix**| ![confusion_matrix](images/confusion_matrix.png) |
+| **Permutation Importance** | ![perm_importance](images/perm_importance.png) |
