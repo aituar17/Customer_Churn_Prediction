@@ -121,8 +121,8 @@ Customer_Churn_Prediction/
 ## ⚙️ Setup & Reproducibility
 ### 1️⃣ Clone repository
 ```bash
-git clone https://github.com/aituar17/customer-churn.git
-cd customer-churn
+git clone https://github.com/aituar17/Customer_Churn_Prediction.git
+cd Customer_Churn_Prediction
 ```
 ### 2️⃣ Create environment
 ```bash
