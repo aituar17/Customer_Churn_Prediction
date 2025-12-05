@@ -69,11 +69,11 @@ Explained how the model makes predictions using **SHAP** and **Permutation Impor
 #### 🔍 Key Drivers of Churn
 | **Rank** | **Feature**| **Effect** | 
 | ------------- | ------------- | ------------- | 
-| 1 | Contract_Month-to-month | Strong positive impact on churn | 
-| 2 | tenure | Longer tenure → lower churn | 
-| 3 | MonthlyCharges | Higher charges → higher churn | 
-| 4 | InternetService_Fiber_optic | Associated with higher churn | 
-| 5 | TotalCharges | Higher total → lower churn | 
+| 1 | tenure | Longer tenure → lower churn |
+| 2 | MonthlyCharges | Higher charges → higher churn |
+| 3 | InternetService_Fiber_optic | Associated with higher churn | 
+| 4 | TotalCharges | Higher total → lower churn |
+| 5 | Contract_Month-to-month | Positive impact on churn |    
 
 ## 🧩 Visualizations
 ### Model Evaluation
@@ -139,7 +139,7 @@ notebooks/03_model_explainability.ipynb
 ```
 
 ## 💬 Insights & Business Impact
-- Customers on **month-to-month contracts** are at the highest churn risk.
+- Customers with high tenure are at the highest churn risk.
 - **Retention strategies** should focus on encouraging long-term contracts and loyalty programs.
 - **Price sensitivity** is evident — reducing sudden charge increases can improve retention.
 - Explainability (SHAP) helps justify model predictions to non-technical stakeholders.
